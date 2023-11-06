@@ -1,0 +1,13 @@
+# 1. Edit the vault with the 'ansible-vault edit' command
+
+# 1.a. Manual password entry
+ansible-vault edit group_vars/all/pass.yml
+Vault password:
+
+# 1.b Automate password entry
+ansible-vault edit group_vars/all/pass.yml --vault-password-file vault.pass
+
+# 2. This opens up the 'vim' editor, press 'i' or 'a' to edit, then 'esc' ':wq' to save and exit
+# Add this text in using your own access and secret key
+ec2_access_key: AAAAAAAAAAAAAABBBBBBBBBBBB                                      
+ec2_secret_key: afjdfadgf$fgajk5ragesfjgjsfdbtirhf
