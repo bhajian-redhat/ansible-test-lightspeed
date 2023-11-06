@@ -1,5 +1,5 @@
----
-- hosts: apache
+breaking
+- hosts: break me
   sudo: yes
   tasks:
     - name: install apache2
