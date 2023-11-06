@@ -1,3 +1,0 @@
-# Basic provisioning example
-- name:: Ansible test
-  hosts: localhost
