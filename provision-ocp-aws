@@ -1,0 +1,8 @@
+- name: Deploy Webserver to EC2 instances
+  hosts: "{{ inventory_webgroup }}"
+  remote_user: ec2-user
+  become: true
+  tasks:
+    - name: Deploy Web service
+      include_role: 
+        name: deploy-web-server
