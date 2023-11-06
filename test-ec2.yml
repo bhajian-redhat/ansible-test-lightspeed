@@ -1,8 +1,8 @@
+---
 # Basic provisioning example
 - name: Ansible test
   hosts: localhost
   tasks:
-  - name: launching AWS instance using Ansible
-    ec2:
-    key_name: aws_instance_Ansible
-    
+    - name: launching AWS instance using Ansible
+      ec2:
+      key_name: aws_instance_Ansible
